@@ -1,0 +1,9 @@
+build
+cmake-build-debug
+cmake-build-release
+.idea
+*.ilk
+*.pdb
+*.pyd
+.tmp*
+__pycache__

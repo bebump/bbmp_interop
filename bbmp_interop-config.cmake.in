@@ -1,0 +1,5 @@
+@PACKAGE_INIT@
+set_and_check(PYBIND11_INCLUDE_DIR "@PACKAGE_PYBIND11_INCLUDE_DIR@")
+set(BBMP_INTEROP_INSTALLED ON)
+include("${CMAKE_CURRENT_LIST_DIR}/bbmp_types-targets.cmake")
+include("${CMAKE_CURRENT_LIST_DIR}/bbmp_interop_tools.cmake")
