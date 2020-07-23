@@ -30,7 +30,7 @@ You can use the library either by installing it and then using
 
 or by placing it into your project and using `add_subdirectory`.
 
-You will see examples for both usage in `tests/test_export_import.py`,
+You will see examples for both usages in `tests/test_export_import.py`,
 although the projects are constructed during runtime in a temporary directory,
 so it's easier to begin with the CMake project inside the `tests` directory.
 
@@ -64,7 +64,7 @@ exported function returns.
 
 # Running tests
 
-The CMake projects uses CTest. After generating the build you can run `ctest
+The CMake project uses CTest. After generating the build you can run `ctest
 --verbose` from inside the build directory to run all tests.
 
 I have tested them on Windows 10 (with Visual Studio 2017 and NMake
