@@ -63,6 +63,14 @@ class OwnedChannelData {
     return ptrs_[channel_ix];
   }
 
+  T** GetWritePtrs() noexcept {
+    return ptrs_.get();
+  }
+
+  T const * const * GetReadPtrs() const noexcept {
+    return ptrs_.get();
+  }
+
   operator bool() noexcept { return heap_object_.operator bool(); }
 
   size_t length() const noexcept { return length_; }
