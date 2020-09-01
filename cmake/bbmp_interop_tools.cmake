@@ -30,6 +30,8 @@ function(CREATE_BBMP_PYTHON_CONVERSIONS_TARGET)
   find_package(Python ${Python_VERSION} REQUIRED COMPONENTS Interpreter
                                                             Development NumPy)
 
+  message(STATUS "bbmp_interop is linking to the Python environment belonging to ${Python_EXECUTABLE}")
+
   add_library(extern_pybind11 INTERFACE)
   target_include_directories(extern_pybind11
                              INTERFACE "${PYBIND11_INCLUDE_DIR}")
